@@ -54,6 +54,10 @@ bot.hears('/fart', (ctx) => ctx.replyWithAudio({
     source: fs.createReadStream('pictures/moan-bark-fart.mp3')
   })
 )
+bot.hears('/deutschland', (ctx) => ctx.replyWithAudio({
+  source: fs.createReadStream('pictures/deutschland.mp3')
+})
+)
 
 bot.hears('/daddy', (ctx) => ctx.replyWithAudio({
     source: fs.createReadStream('pictures/ohyesdaddy.mp3')
