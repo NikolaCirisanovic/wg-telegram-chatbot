@@ -4,13 +4,13 @@
   "description": "telegram chat bot for our WG.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i && node index.js"
+    "start": "micro-bot"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "micro-bot": "^2.5.3",
     "telegraf": "^4.0.2"
   }
 }

@@ -2,6 +2,8 @@ const { Telegraf, Markup } = require('telegraf')
 require('dotenv').config()
 const fs = require('fs');
 
+module.exports = ({ reply }) => reply('42')
+
 
 const token = process.env.BOT_TOKEN
 if (token === undefined) {
