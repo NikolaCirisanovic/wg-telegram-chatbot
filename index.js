@@ -2,9 +2,6 @@ const { Telegraf, Markup } = require('telegraf')
 require('dotenv').config()
 const fs = require('fs');
 
-module.exports = ({ reply }) => reply('42')
-
-
 const token = process.env.BOT_TOKEN
 if (token === undefined) {
   throw new Error('BOT_TOKEN must be provided!')
@@ -74,3 +71,5 @@ bot.launch()
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
+
+module.exports = ({ reply }) => reply('42')
